@@ -33,7 +33,7 @@ public class StartController extends HttpServlet {
     }
 
     private void performTask(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String action = req.getParameter("action");
+        String action = req.getParameter(Constants.PAGE_ACTION);
         if ("".equals(action) || action == null) {
             req.setAttribute(Constants.KEY_NUMBERS, numbers);
             req.setAttribute(Constants.KEY_CONTROL, control);

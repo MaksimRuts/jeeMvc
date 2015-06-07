@@ -15,4 +15,5 @@ public class Constants {
 
 
     public static final String RESULT_VALUE = "result";
+    public static final String PAGE_ACTION = "action";
 }
